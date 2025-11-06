@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/space.jpg');
+    background-size: cover;  
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(205, 208, 214);
+}
+
+h1{
+    font-size: 40px;
+}
+
+p {
+    size: 40px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: right;   /* aligns text inside the footer */
+    padding: 15px;
+    position: fixed;     /* fixes the footer to the viewport */
+    bottom: 0;           /* sticks it to the bottom */
+    right: 0; 
+}
+
+ul, li {
+    margin: 10px 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.box-container {
+    display: flex;          /* lines boxes horizontally */
+    gap: 20px;              /* spacing between boxes */
+    flex-wrap: wrap;        /* allows wrapping on small screens */
+    justify-content: center; /* centers boxes in the container */
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #7464E8;
+    color: white;
+    text-decoration: none;  /* removes underline from links */
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+    
+}
+
+.box:hover {
+    background-color: #5a4bb5; /* darker on hover */
+    transform: scale(1.05);    /* slight zoom effect */
+}
+
+.carousel-container {
+    width: 600px;          /* your carousel width */
+    height: auto;         /* your carousel height */
+    overflow: hidden;      /* hide other slides */
+    margin: 0 auto;
+    border-radius: 10px;
+    
+
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* smooth sliding */
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;      /* ensures full image is visible */
+    object-position: center;  /* centers image inside the slide */
+}
+
+
+#quote {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+#author {
+    font-size: 18px;
+    color: #a4a4a4;
+}

@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css"/>
-        <title>
-            Alec's Website
-        </title>
-    </head>
 
-    <body>
-        <script>src="QOTD.js"</script>
-        <div id="quote">Loading quote...</div>
-        <div id="author"></div>
-        Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
-    </body>
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>
+        Alec's Website
+    </title>
+
+</head>
+
+<body>
+    <h1>Alec's Homepage</h1>
+    <div id="quote">Loading quote...</div>
+    <div id="author"></div>
+    <div class="box-container">
+        <a href="contact.html" class="box">Contacts</a>
+        <a href="index.html" class="box">Home</a>
+        <a href="projects.html" class="box">Projects</a>
+        <a href="skills.html" class="box">Skills</a>
+    </div>
+
+    <div class="carousel-container">
+    <div class="carousel-track">
+        <img src="images/alejandra.png" alt="Slide 1" class="carousel-slide">
+        <img src="images/lilou.png" alt="Slide 2" class="carousel-slide">
+        <img src="images/micro.png" alt="Slide 3" class="carousel-slide">
+        <img src="images/sky.png" alt="Slide 4" class="carousel-slide">
+        <img src="images/stormtroopers.png" alt="Slide 5" class="carousel-slide">
+    </div>
+    </div>
+
+
+    <footer>Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a></footer>
+
+    <script src="javascripts/QOTD.js"></script>
+    <script src="javascripts/carousel.js"></script>
+</body>
+
 </html>
